@@ -1,0 +1,19 @@
+.green{
+    background-color: green;
+}
+span{
+    font-size: 40px;
+}
+div{
+    height: 500px;
+    width: 500px;
+    border: 2px solid black;
+    padding: 10px 50px 70px;
+}
+th{
+    height: 50px;
+    width: 50px;
+}
+h3{
+    color: green;
+}

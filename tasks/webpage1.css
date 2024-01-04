@@ -1,0 +1,135 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: azure;
+}
+.hrmsg{
+    width: 400px;
+    margin: 20px;
+}
+.head{
+    height: 50px;
+    width: 1500px;
+    background-color: white;
+    margin-top: 20px;
+}
+.foot{
+    height: 1000px;
+    width: 1510px;
+    background-color: azure;
+}
+button{
+    margin-right: 9px;
+    background-color: white;
+}
+.bluebg{
+    background-color: steelblue;
+    padding: 3px;
+    color: white;
+}
+.greenbg{
+    background-color: lightgreen;
+    padding: 3px;
+    color: white;
+}
+.redbg{
+    background-color: red;
+    padding: 3px;
+    color: white;
+}
+.yellowbg{
+    background-color: yellow;
+    padding: 3px;
+}
+.cyan{
+    background-color: cadetblue;
+    padding: 3px;
+}
+.left{
+    height: 600px;
+    width: 450px;
+    background-color: white;
+    box-shadow: 2px 2px 2px gainsboro;
+    margin: 9px;
+    margin-top: 20px;
+    margin-left: 35px;
+    display: inline;
+    float: left;
+}
+.user{
+    height: 150px;
+    width: 150px;
+    margin-top: 9px;
+}
+.msg{
+    margin: 5px;
+    color: steelblue;
+    padding: 3px;
+}
+span{
+    height: 150px;
+    width: 100px;
+}
+i{
+    font-size: 25px;
+}
+.webs{
+    height: 400px;
+    width: 400px;
+    margin-left:15px;
+    margin-right: 5px;
+}
+.inline{
+    display: inline;
+    float: right;
+}
+.rightup{
+    height: 350px;
+    width: 900px;
+    margin-left: 15px;
+    margin-top: 20px;
+    margin-right: 45px;
+    background-color: white;
+    box-shadow: 2px 2px 2px gainsboro;
+    float: right;
+}
+input{
+    display: inline;
+    float: right;
+    width: 600px;
+    padding: 5px;
+    margin: 5px;
+}
+h3{
+    display: inline;
+    margin: 10px;
+    padding: 5px;
+    margin-bottom: 29px;
+}
+.rightdown{
+    height: 400px;
+    width: 900px;
+    margin-left: 15px;
+    margin-top: 20px;
+    margin-right: 45px;
+    background-color: white;
+    box-shadow: 2px 2px 2px gainsboro;
+    float: right;
+}
+h2{
+    margin-left: 9px;
+}
+h4{
+    margin-left: 10px;
+    font-size: 18px;
+    float: left;
+}
+.grey{
+    height: 6px;
+    width: 800px;
+    background-color: gainsboro;
+    margin: 10px;
+    margin-left: 15px;
+}

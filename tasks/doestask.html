@@ -1,0 +1,284 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            font-family: 'Nunito', sans-serif;
+        }
+        body{
+            background-color: gainsboro;
+        }
+        .head{
+            height: 60px;
+            width: 1500px;
+            background-color: ghostwhite;
+            margin-top: 20px;
+        }
+        .foot{
+            height: 800px;
+            width: auto;
+        }
+        .bluebg{
+            background-color: steelblue;
+            padding: 3px;
+            color: white;
+            border-color: steelblue;
+            height: 30px;
+            width: 80px;
+            border-radius: 5px;
+
+        }
+        .greenbg{
+            background-color: green;
+            padding: 3px;
+            color: white;
+            border-color: green;
+            height: 30px;
+            width: 80px;
+            border-radius: 5px;
+        }
+        .redbg{
+            background-color: red;
+            padding: 3px;
+            color: white;
+            border-color: red;
+            height: 30px;
+            width: 80px;
+            border-radius: 5px;
+        }
+        .doe1{
+            height: 375px;
+            width: 350px;
+            background-color: ghostwhite;
+            float: left;
+            margin: 50px 5px 0 350px;
+            padding: 20px;
+            position: relative;
+            box-shadow: 1px 1px 2px rgb(151, 149, 149);
+        }
+        .doe2{
+            height: 375px;
+            width: 350px;
+            background-color: ghostwhite;
+            float: right;
+            margin: 50px 350px 5px 10px;
+            padding: 20px;
+            position: relative;
+            box-shadow: 1px 1px 2px rgb(151, 149, 149);
+        }
+        img{
+            height: 100px;
+            width: 100px;
+        }
+        span{
+            position: absolute;
+            top: 40px;
+            left: 150px;
+        }
+        .timeline{
+            position: absolute;
+            max-width: 300px;
+            margin: 10px auto;
+            margin-top: 0px;
+            padding: 20px;
+            right: 5px;
+            left: 50px;
+            height: 200px;
+        }
+        .timeline::before{
+            content: '';
+            position: absolute;
+            top: 0px;
+            bottom: 0;
+            left: 5%;
+            width: 2px;
+            background-color: #333;
+            margin-left: 1px;
+        }
+        .event {
+            position: relative;
+            margin-bottom: 10px;
+        }
+        .event-icon {
+            position: absolute;
+            top: 10%;
+            left: 0%;
+            transform: translate(-50%, -50%);
+            background-color: lightgreen;
+            color: #fff;
+            border-radius: 50%;
+            width: 15px;
+            height: 15px;
+            line-height: 40px;
+            text-align: center;
+            font-size: 16px;
+        }
+        .event-content {
+            margin-left: 30px;
+        }
+        .event-title {
+            font-size: 15px;
+            margin-bottom: 5px;
+        }
+        .date{
+            float: right;
+            font-size: 12px;
+            margin-right: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <center><br>
+            <button class="greenbg">preview</button>
+            <button class="bluebg">HTML</button>
+            <button class="bluebg">CSS</button>
+            <button class="bluebg">Download</button>
+            <select class="redbg">
+                <option value="Actions">Actions</option>
+            </select>
+        </center>
+    </div>
+    <div class="foot">
+        <div class="doe1">
+            <img src="../images/pfp.png" alt="image">
+            <div class="timeline">
+                <div class="event">
+                    <div class="event-icon"></div>
+                    <div class="event-content">
+                        <p class="date">14 MAY</p>
+                        <div class="event-title"><b>Anton Knudsen</b></div>
+                        
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    </div>
+                    </div>
+                    <div class="event">
+                        <div class="event-icon"></div>
+                        <div class="event-content">
+                            <p class="date">14 MAY</p>
+                            <div class="event-title"><b>Anton Knudsen</b></div>
+                            
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                        </div>
+                        </div>
+                        <div class="event">
+                            <div class="event-icon"></div>
+                            <div class="event-content">
+                                <p class="date">14 MAY</p>
+                                <div class="event-title"><b>Anton Knudsen</b></div>
+                                
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                            </div>
+                            </div> 
+                </div>
+                <span><h2>John Doe</h2><h4>UX Designer</h4></span>
+            </div>
+        <div class="doe2">
+            <img src="../images/pfp2.png" alt="image">
+            <span><h2>User Doe</h2><h4>UX Designer</h4></span>
+            <div class="timeline">
+                <div class="event">
+                    <div class="event-icon"></div>
+                    <div class="event-content">
+                        <p class="date">14 MAY</p>
+                    <div class="event-title"><b>Anton Knudsen</b></div>
+                    
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    </div>
+                </div>
+                <div class="event">
+                    <div class="event-icon"></div>
+                    <div class="event-content">
+                        <p class="date">14 MAY</p>
+                        <div class="event-title"><b>Anton Knudsen</b></div>
+                        
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    </div>
+                    </div>  <div class="event">
+                        <div class="event-icon"></div>
+                        <div class="event-content">
+                            <p class="date">14 MAY</p>
+                            <div class="event-title"><b>Anton Knudsen</b></div>
+                            
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                        </div>
+                        </div> 
+            </div>
+        </div>
+        <div class="doe1">
+            <img src="../images/pfp.png" alt="image">
+            <span><h2>John Doe</h2><h4>UX Designer</h4></span>
+            <div class="timeline">
+                <div class="event">
+                    <div class="event-icon"></div>
+                    <div class="event-content">
+                        <p class="date">14 MAY</p>
+                <div class="event-title"><b>Anton Knudsen</b></div>
+                
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    </div>
+                </div>
+                <div class="event">
+                    <div class="event-icon"></div>
+                    <div class="event-content">
+                        <p class="date">14 MAY</p>
+                        <div class="event-title"><b>Anton Knudsen</b></div>
+                        
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    </div>
+                    </div>  <div class="event">
+                        <div class="event-icon"></div>
+                        <div class="event-content">
+                            <p class="date">14 MAY</p>
+                            <div class="event-title"><b>Anton Knudsen</b></div>
+                            
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                        </div>
+                        </div> 
+            </div>
+        </div>
+        <div class="doe2">
+            <img src="../images/pfp2.png" alt="image">
+            <span><h2>User Doe</h2><h4>UX Designer</h4></span>
+            <div class="timeline">
+                <div class="event">
+                    <div class="event-icon"></div>
+                    <div class="event-content">
+                        <p class="date">14 MAY</p>
+                <div class="event-title"><b>Anton Knudsen</b></div>
+                
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    </div>
+                </div>
+                <div class="event">
+                    <div class="event-icon"></div>
+                    <div class="event-content">
+                        <p class="date">14 MAY</p>
+                        <div class="event-title"><b>Anton Knudsen</b></div>
+                        
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    </div>
+                    </div>  <div class="event">
+                        <div class="event-icon"></div>
+                        <div class="event-content">
+                            <p class="date">14 MAY</p>
+                            <div class="event-title"><b>Anton Knudsen</b></div>
+                            
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                        </div>
+                        </div> 
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+

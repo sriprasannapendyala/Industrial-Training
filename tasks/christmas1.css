@@ -1,0 +1,126 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+.top{
+    height: 600px;
+    width: 100%;
+    background-color: ghostwhite;
+    position: relative;
+}
+.center{
+    height: 400px;
+    width: 100%;
+    background-color: gainsboro;
+}
+.bottom{
+    height: 500px;
+    width: 100%;
+    background-color: ghostwhite;
+}
+.end{
+    height: 400px;
+    width: 100%;
+    background-color: lightskyblue;
+    position: relative;
+}
+.space{
+    letter-spacing:5px;
+    padding-top: 50px;
+}
+.size{
+    font-size: 40px;
+}
+.button{
+    background-color: blue;
+    height: 40px;
+    width: 140px;
+    color: white;
+    border-radius: 100px;
+}
+.div{
+    height: 300px;
+    width: 400px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: ghostwhite;
+    position: absolute;
+}
+.one{
+    top: 520px;
+    left: 330px;
+    float: left;
+}
+.two{
+    top: 420px;
+    left: 800px;
+}
+.three{
+    top: 770px;
+    left: 800px;
+}
+.four{
+    top: 870px;
+    left: 330px;
+}
+.i1{
+    font-size: 50px;
+    color: orange;
+    float: left;
+    margin: 30px 400px 30px 30px;
+}
+.i2{
+    font-size: 50px;
+    color: skyblue;
+    float: left;
+    margin: 30px 400px 30px 30px;
+}
+.i3{
+    font-size: 50px;
+    color: red;
+    float: left;
+    margin: 30px 400px 30px 30px;  
+}
+.i4{
+    font-size: 50px;
+    color: blue;
+    float: left;
+    margin: 30px 400px 30px 30px;
+}
+.text{
+    margin-left: 20px;
+}
+.d{
+    height: 400px;
+    width: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: ghostwhite;
+    position: absolute;
+}
+.div1{
+    left: 90px;
+    bottom: 80px;
+}
+.div2{
+    left: 430px;
+    bottom: 170px; 
+}
+.div3{
+    left: 770px;
+    bottom: 80px;
+}
+.div4{
+    left: 1108px;
+    bottom: 170px;
+}
+.red{
+    font-size: 50px;
+    color: red;
+}
+.last{
+    font-size: 20px;
+    letter-spacing:2px;
+    background-color: ghostwhite;
+    margin: 10px;
+}

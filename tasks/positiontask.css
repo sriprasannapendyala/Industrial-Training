@@ -1,0 +1,134 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+h3{
+    margin-left: 15px;
+}
+.same{
+    height: 350px;
+    width: 250px;
+    outline: 2px solid black;
+    float: left;
+    margin-left: 2px;
+    margin-bottom: 5px;
+}
+.in{
+    height: 300px;
+    width: 205px;
+    outline: 1px solid black;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.bluetop{
+    height: 100px;
+    width: 100px;
+    outline: 1px solid black;
+    background-color: skyblue;
+    position: static;
+}
+.bluebot{
+    height: 100px;
+    width: 100px;
+    outline: 1px solid black;
+    background-color: skyblue;
+    position: static;
+}
+.greens{
+    height: 100px;
+    width: 100px;
+    outline: 1px solid black;
+    background-color: green;
+    position: static;
+}
+.greenr{
+    height: 100px;
+    width: 100px;
+    outline: 1px solid black;
+    background-color: green;
+    position: relative;
+    top: 20px;
+    left: 15px;
+}
+.greena{
+    height: 100px;
+    width: 100px;
+    outline: 1px solid black;
+    background-color: green;
+    position: absolute;
+    top: 190px;
+    left: 629px; 
+}
+.greenf{
+    height: 100px;
+    width: 100px;
+    outline: 1px solid black;
+    background-color: green;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+}.end{
+    margin-right: 300px;
+}
+.stbin{
+    height: 300px;
+    width: 205px;
+    outline: 1px solid black;
+    margin-left: 20px;
+    margin-top: 10px;
+    overflow-y: scroll;
+}
+.slfin{
+    height: 300px;
+    width: 205px;
+    outline: 1px solid black;
+    margin-left: 20px;
+    margin-top: 10px;
+    overflow-x: scroll;
+}
+.stblue{
+    height: 400px;
+    width: 100px;
+    outline: 1px solid black;
+    background-color: skyblue;
+}
+.slfblue{
+    height: 100px;
+    width: 800px;
+    outline: 1px solid black;
+    background-color: skyblue;
+    position: static;
+    display: inline-flex;
+}
+.stgreen{
+    height: 100px;
+    width: 100px;
+    outline: 1px solid black;
+    background-color: green;
+    position: sticky;
+    top: 0px;
+}
+.sbgreen{
+    height: 100px;
+    width: 100px;
+    outline: 1px solid black;
+    background-color: green;
+    position: sticky;
+    bottom: 0px;
+}
+.slgreen{
+    height: 100px;
+    width: 100px;
+    outline: 1px solid black;
+    background-color: green;
+    position: sticky;
+    left: 0px;
+}
+.sfgreen{
+    height: 100px;
+    width: 100px;
+    outline: 1px solid black;
+    background-color: green;
+    position: sticky;
+    right: 0px;
+}

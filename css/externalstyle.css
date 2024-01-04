@@ -1,0 +1,40 @@
+.para2{
+    font-size: 30px;
+    font-family: cursive;
+    border: solid plum;
+    background-color: lightblue;
+    color: lightcoral;
+    text-align: center;
+}
+#id{
+    font-size: 28px;
+    font-family: fantasy;
+    background-color: pink;
+    color: brown;
+    text-align: center;
+    border: solid peru;
+}
+h3{
+    font-size: 32px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: gray;
+    text-decoration: overline;
+    text-transform: capitalize;
+    background-color: aliceblue;
+}
+*{
+    text-decoration-color: cadetblue;
+}
+/*img[src]{
+    border: solid orange;
+    align-content: center;
+    margin-top: 2px solid blue;
+}*/
+img:hover{
+    border: 3px solid brown;
+    height: 200px; 
+}
+a[href]{
+    background-color: lavenderblush;
+    color: palevioletred;
+}

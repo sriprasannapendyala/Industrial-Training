@@ -1,0 +1,75 @@
+.parent{
+    height: 700px; width: 808px; border: 2px solid black;
+}
+.p1{
+    height: 700px; 
+    width: 100px;
+    float: left; 
+    border-right: 2px solid black;
+}
+.p2{
+    height: 700px; width: 200px; float: left; border-right: 2px solid black;
+}
+.p3{
+    height: 700px; width: 200px; float: right;
+}
+.c1{
+    height: 100px;
+    width: 100px;
+    float: left;
+    border-bottom: 2px solid black;
+}
+.c2{
+    height: 100px;
+    width: 200px;
+    float: left;
+    border-bottom: 2px solid black; 
+    border-right: 2px solid white;
+}
+.c3{
+    height: 100px;
+    width: 200px;
+    float: right; 
+    border-bottom: 2px solid black;
+}
+.c4{
+    height: 400px; width: 100px; float: left; border-bottom: 2px solid black;
+}
+.c5{
+    height: 200px; width: 50px; float: right; border-left: 2px solid black;
+}
+.c6{
+    height: 300px; width: 50px; float: left; border-right: 2px solid black;
+}
+.c7{
+    width: 100px; border-bottom: 2px solid black; float: right;
+}
+.c8{
+    height: 100px; width: 200px; float: left; border-bottom: 2px solid black;
+}
+.c9{
+    height: 49px; width: 100px; float: right; border-left: 2px solid black;
+}
+.w{
+    border-right: 2px solid white;
+}
+.x2{
+    width: 200px; 
+    float: right; 
+    border-bottom: 2px solid black;
+}
+.x3{
+    height: 200px; 
+}
+.x4{
+    width: 100px; float: left; border-right: 2px solid black;
+}
+.x5{
+    border-right: 2px solid black;
+}
+.x6{
+    height: 50px; 
+}
+.x7{
+    height: 199px; 
+}
