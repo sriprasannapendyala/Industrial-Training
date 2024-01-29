@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zindex</title>
+    <style>
+        .main{
+            height: 400px;
+            width: auto;
+        }
+        .box1{
+            height: 100px;
+            width: 300px;
+            background-color: pink;
+            position: absolute;
+            top: 200px;
+            left: 300px;
+            float: left;
+            z-index: 3;
+        }
+        .box2{
+            height: 200px;
+            width: 400px;
+            background-color: silver;
+            position: absolute;
+            top: 150px;
+            left: 250px;
+            float: left;
+            z-index: 2;
+        }
+        .box3{
+            height: 300px;
+            width: 600px;
+            background-color: lightblue;
+            position: absolute;
+            left: 150px;
+            top: 100px;
+            float: left;
+            z-index: 1;
+        }
+        .text{
+            height: 150px;
+            width: 500px;
+            background-color: papayawhip;
+        }
+        .hidden{
+            overflow: hidden;
+        }
+        .auto{
+            overflow: auto;
+        }
+        .scroll{
+            overflow: scroll;
+        }
+        .x{
+            overflow-x: hidden;
+            overflow-y: scroll;
+        }
+        img{
+            height: 350px;
+            width: 600px;
+            opacity: 0.8;
+        }
+        .image{
+            height: 350px;
+            width: 600px;
+            background-color: black;  
+            position: absolute;
+            left: 500px;
+            top: 1655px; 
+        }
+        .head{
+            height: 100px;
+            width: 200px;
+            position: absolute;
+            top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+    <center><h1>z-index</h1></center>
+    <hr><br><br>
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+    <hr>
+    <center><h1>Overflow</h1>
+    <hr><br><br><h3>Hidden</h3>
+    <div class="text hidden">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum iusto minima tempora at illum incidunt, officiis aliquid necessitatibus minus nam nisi provident nostrum quasi error! Quo reiciendis facilis porro odit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum vero illo dolorum? Labore minima incidunt aut magnam ad illo cum veritatis dicta, ex alias numquam animi sequi deleniti quibusdam mollitia.pisicing elit. Cum iusto minima tempora at illum incidunt, officiis aliquid necessitatibus minus nam nisi provident nostrum quasi error! Quo reiciendis facilis porro odit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum vero illo dolorum? Labore minima incidunt aut magnam ad sto minima tempora at illum incidunt, officiis aliquid necessitatibus minus nam nisi provident nostrum quasi error! Quo reiciendis facilis porro odit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum vero illo dolorum? Labore minima incidunt aut magnam ad illo cum veritatis dicta, ex alias numquam animi sequi deleniti quibusdam mollitia.pisicing elit. Cum iusto minima tempora at illum incidunt, officiis aliquid necessitatibus minus nam nisi provident nostrum quasi error! Quo reiciendis facilis porro odit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum vero illo dolorum? Labore minima incidunt aut magnam ad illo cum veritatis dicta, ex alias numquam an</div>
+    <br><br><br><h3>Auto</h3>
+    <div class="text auto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum iusto minima tempora at illum incidunt, officiis aliquid necessitatibus minus nam nisi provident nostrum quasi error! Quo reiciendis facilis porro odit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum vero illo dolorum? Labore minima incidunt aut magnam ad illo cum veritatis dicta, ex alias numquam animi sequi deleniti quibusdam mollitia.pisicing elit. Cum iusto minima tempora at illum incidunt, officiis aliquid necessitatibus minus nam nisi provident nostrum quasi error! Quo reiciendis facilis porro odit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum vero illo dolorum? Labore minima incidunt aut magnam ad sto minima tempora at illum incidunt, officiis aliquid necessitatibus minus nam nisi provident nostrum quasi error! Quo reiciendis facilis porro odit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum vero illo dolorum? Labore minima incidunt aut magnam ad illo cum veritatis dicta, ex alias numquam animi sequi deleniti quibusdam mollitia.pisicing elit. Cum iusto minima tempora at illum incidunt, officiis aliquid necessitatibus minus nam nisi provident nostrum quasi error! Quo reiciendis facilis porro odit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum vero illo dolorum? Labore minima incidunt aut magnam ad illo cum veritatis dicta, ex alias numquam an</div>
+    <br><br><br><h3>Scroll</h3>
+    <div class="text scroll">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum iusto minima tempora at illum incidunt, officiis aliquid necessitatibus minus nam nisi provident nostrum quasi error! Quo reiciendis facilis porro odit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum vero illo dolorum? Labore minima incidunt aut magnam ad illo cum veritatis dicta, ex alias numquam animi sequi deleniti quibusdam mollitia.pisicing elit. Cum iusto minima tempora at illum incidunt, officiis aliquid necessitatibus minus nam nisi provident nostrum quasi error! Quo reiciendis facilis porro odit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum vero illo dolorum? Labore minima incidunt aut magnam ad sto minima tempora at illum incidunt, officiis aliquid necessitatibus minus nam nisi provident nostrum quasi error! Quo reiciendis facilis porro odit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum vero illo dolorum? Labore minima incidunt aut magnam ad illo cum veritatis dicta, ex alias numquam animi sequi deleniti quibusdam mollitia.pisicing elit. Cum iusto minima tempora at illum incidunt, officiis aliquid necessitatibus minus nam nisi provident nostrum quasi error! Quo reiciendis facilis porro odit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum vero illo dolorum? Labore minima incidunt aut magnam ad illo cum veritatis dicta, ex alias numquam an</div>
+    <br><br><br><h3>overflow-x & y</h3>
+    <div class="text x">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum iusto minima tempora at illum incidunt, officiis aliquid necessitatibus minus nam nisi provident nostrum quasi error! Quo reiciendis facilis porro odit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum vero illo dolorum? Labore minima incidunt aut magnam ad illo cum veritatis dicta, ex alias numquam animi sequi deleniti quibusdam mollitia.pisicing elit. Cum iusto minima tempora at illum incidunt, officiis aliquid necessitatibus minus nam nisi provident nostrum quasi error! Quo reiciendis facilis porro odit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum vero illo dolorum? Labore minima incidunt aut magnam ad sto minima tempora at illum incidunt, officiis aliquid necessitatibus minus nam nisi provident nostrum quasi error! Quo reiciendis facilis porro odit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum vero illo dolorum? Labore minima incidunt aut magnam ad illo cum veritatis dicta, ex alias numquam animi sequi deleniti quibusdam mollitia.pisicing elit. Cum iusto minima tempora at illum incidunt, officiis aliquid necessitatibus minus nam nisi provident nostrum quasi error! Quo reiciendis facilis porro odit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum vero illo dolorum? Labore minima incidunt aut magnam ad illo cum veritatis dicta, ex alias numquam an</div>
+    <br><hr><br><br><br>
+    <div class="image"><img src="../images/pic5.jpg" alt="image">
+    <div class="head"></div></div>
+    </center>
+</body>
+</html>

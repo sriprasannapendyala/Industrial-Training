@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <style>
+        *{
+            font-family: 'Poppins', sans-serif;
+        }
+        .main{
+            height: 800px;
+            width: 1250px;
+            border: 4px solid black;
+            margin-left: 30px;
+            margin-top: 30px;
+            padding: 100px;
+        }
+        .content{
+            height: 500px;
+            width: 1100px;
+            background-color: aliceblue;
+            margin: 50px 0 0 0;
+        }
+        iframe{
+            float: right;
+        }
+        .form{
+            margin: 30px 30px 30px 30px;
+            float: left;
+            height: 430px;
+            width: 590px;
+            text-align: left;
+            position: relative;
+        }
+        label{
+            display: block;
+        }
+        input{
+            height: 30px;
+            width: 250px;
+        }
+        .right{
+            position: absolute;
+            top: 65px;
+            right: 250px;
+        }
+        .right2{
+            position: absolute;
+            top: 85px;
+            right: 30px;
+        }
+        .input2{
+            width: 553px;
+        }
+        button{
+            height: 30px;
+            width: 80px;
+            background-color:rgb(14, 130, 225);
+            color: white;
+            border-color: rgb(14, 130, 225);
+            position: absolute;
+            bottom: 10px;
+            left: 0px;
+        }
+        .foot{
+            height: 200px;
+            width: 900px;
+            margin: 30px 0 0 0 ;
+            padding: 40px;
+        }
+        .icon{
+            height: 200px;
+            width: 200px;
+            float: left;
+            margin-right: 30px;
+            position: relative;
+        }
+        .licon{
+            height: 200px;
+            width: 200px;
+            float: right;
+            position: relative;
+        }
+        .blue{
+            height: 20px;
+            width: 20px;
+            background-color: rgb(14, 130, 225);
+            border-radius: 70px;
+            padding: 20px;
+            position: relative;
+            transition: all;
+        }
+        .blue:hover{
+            width: 25px;
+            height: 25px;
+            border-radius: 80px;
+        }
+        i{
+            font-size: 23px;
+            transition: all;
+        }
+        p{
+            position: absolute;
+            top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <center>
+            <h2>Contact Form #43</h2>
+            <div class="content">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30546.07289808977!2d81.86887238176442!3d16.863072092591473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a37966bbe05c883%3A0x46ae57e233db76ca!2sYeditha%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1702014268464!5m2!1sen!2sin" width="450" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="form">
+                    <h2>Contact Us</h2>
+                    <label>Name</label>
+                    <input type="text" placeholder="Name">
+                    <label class="right">Email</label>
+                    <input type="text" class="right2" placeholder="Email"><br><br>
+                    <label>Subject</label>
+                    <input type="text" placeholder="subject" class="input2"><br><br>
+                    <label>Message</label>
+                    <textarea  cols="80" rows="9" placeholder="Message"></textarea>
+                    <button>Submit</button>
+                </div>
+            </div>
+            <div class="foot">
+                <div class="icon">
+                    <div class="blue"><span><i class="fa-solid fa-location-dot" style="color: #f6f9fd;"></i></span></div>
+                    <p>Address: 123 west, 21st Street,suite 21, New York</p>
+                </div>
+                <div class="icon">
+                    <div class="blue"><span><i class="fa-solid fa-phone" style="color: #f1f4f8;"></i></span></div>
+                    <p> Contact Number: +917842805900</p>
+                </div>
+                <div class="icon">
+                    <div class="blue"><span><i class="fa-solid fa-paper-plane" style="color: #fcfcfd;"></i></span></div>
+                    <p>Email: sriprasanna110@gmail.com</p>
+                </div>
+                <div class="licon">
+                    <div class="blue"><span><i class="fa-solid fa-globe" style="color: #eff1f5;"></i></span></div>
+                    <p>Website: Sriprasanna/website.com</p>
+                </div>
+            </div>
+        </center>
+    </div>
+</body>
+</html>

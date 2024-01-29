@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform in css</title>
+    <style>
+        .div1{
+            height: 300px;
+            width: 200px;
+            /* margin: 30px 150px 50px 125px; */
+            /* margin: 10px; */
+            border: 2px solid black;
+            float: left;
+            background-color: olive;
+            color: white;
+        }
+        .div2{
+            height: 300px;
+            width: 200px;
+            /* margin: 30px 150px 50px 130px; */
+            /* margin: 10px; */
+            border: 2px solid black;
+            float: left;
+            background-color: #6DA4AA;
+            color: white;
+        }
+        .div3{
+            height: 300px;
+            width: 200px;
+            /* margin: 30px 150px 50px 130px; */
+            /* margin: 10px; */
+            border: 2px solid black;
+            float: left;
+            background-color: rgb(159, 159, 159);
+            color: white;
+        }
+        .div4{
+            height: 300px;
+            width: 200px;
+            /* margin: 30px 150px 50px 128px; */
+            /* margin: 10px; */
+            border: 2px solid black;
+            float: left;
+            background-color:#88AB8E;
+            color: white;
+        }
+        .one:hover{
+            background-color: pink;
+            transform: translate(50px,50px);
+        }
+        .two:hover{ 
+            background-color: teal;
+            transform: translateX(40px);
+        }
+        .three:hover{
+            background-color: thistle;
+            transform: translateY(40px);
+        }
+        .four:hover{
+            background-color: slategray;
+           transform: rotate(90deg);
+        }
+        .five:hover{
+            background-color: salmon;
+            transform: rotateX(60deg);
+        }
+        .six:hover{
+            background-color: tan;
+            transform: rotateY(60deg);
+        }
+        .seven:hover{
+            background-color: aqua;
+            transform: scale(2);
+        }
+        .eight:hover{
+            background-color: sandybrown;
+            transform: scaleX(2);
+        }
+        .nine:hover{
+            background-color: darkcyan;
+            transform: scaleY(2);
+        }
+        .ten:hover{
+            transform: skew(20deg);
+        }
+        .ele:hover{
+            background-color: sienna;
+            transform: skewX(50deg);
+        }
+        .twe:hover{
+            background-color: silver;
+            transform: skewY(60deg);
+        }
+        .thi:hover{
+            background-color: bisque;
+            /* matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY())*/
+            transform: matrix(2, 50deg, 30deg, 2, 30px, 25px);
+        }
+        h2{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <center><h1>Transform in CSS</h1></center>
+    <hr>
+    <div>
+    <div class="one div1">transform: translate(50px,50px);</div>
+    <div class="two div1">transform: translateX(40px);</div>
+    <div class="three div1">transform: translateY(40px);</div>
+    <div class="four div2">transform: rotate(90deg);</div>
+    <div class="five div2">transform: rotatex(90deg);</div>
+    <div class="six div2">transform: rotateY(90deg);</div>
+    <div class="seven div3">transform: scale(2);</div>
+    <div class="eight div3">transform: scaleX(2);</div>
+    <div class="nine div3">transform: scaleY(2);</div>
+    <div class="ten div4"> transform: skew(60deg);</div>
+    <div class="ele div4">transform: skewX(50deg);</div>
+    <div class="twe div4">transform: skewY(60deg);</div>
+    <div class="div1 thi"></div>
+</div>
+</body>
+</html>

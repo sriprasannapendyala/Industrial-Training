@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create</title>
+    <style>
+        *{
+            font-family: 'Poppins', sans-serif;
+            margin: 0px;
+            padding: 0px;
+        }
+        .main{
+            height: 600px;
+            width: auto;
+            margin-top: 10px;
+            display: inline-flex;
+        }
+        .left{
+            height: 10px;
+            width: 130px;
+            padding: 300px;
+            position: relative;
+            text-align: left;
+        }
+        img{
+            height: 400px;
+            width: 530px;
+            position: absolute;
+            top: 10px;
+            right: 150px;
+        }
+        h1{
+            position: absolute;
+            top: 410px;
+            left: 50px;
+        }
+        .right{
+            height: 500px;
+            width: 690px;
+            padding: 50px;
+            float: right;
+        }
+        input{
+            height: 5px;
+            width: 230px;
+            padding: 15px;
+            margin-right: 50px;
+            margin-bottom: 30px;
+            display: block;
+        }
+        .long2{
+            width: 475px;
+            margin-bottom: 30px;
+        }
+        select{
+            width: 70px;
+            height: 38px;
+            margin-right: 0px;
+        }
+        .select2{
+            width: 580px;
+            margin-bottom: 30px;
+        }
+        .blue{
+            height: 30px;
+            background-color: rgb(39, 71, 116);
+            color: white;
+            border-color: rgb(15, 41, 104);
+            width: 640px;
+            position: absolute;
+            top: 400px;
+        }
+        .blue2{
+            height: 30px;
+            background-color: rgb(39, 71, 116);
+            color: white;
+            border-color: rgb(15, 41, 104);
+            width: 640px;
+            position: absolute;
+            top: 480px;
+        }
+        hr{
+            width: 300px;
+            display: inline-flex;
+            background-color: black;
+        }
+        p{
+            display: inline;
+            margin: 0 15px 0 15px;
+
+        }
+        .hr2{
+            width: 300px;
+            display: inline;
+            margin-left: 5px;
+        }
+        .input{
+            position: absolute;
+            width: 150px;
+            margin-bottom: 10px;
+        }
+        .input2{
+            position: absolute;
+            right: 50px;
+        }
+        .input3{
+            position: absolute;
+            top: 150px;
+        }
+        .input-field {
+            width: 250px;
+            padding-left: 35px;
+            outline: none;
+        }
+        .input-field:focus{
+            border-color: black;
+        }
+        .input-field2{
+            width: 590px;
+            padding-left: 35px;
+            outline: none;
+        }
+        .input-field2:focus{
+            border-color: black;
+        }
+        .icon {
+            padding: 10px;
+            min-width: 40px;
+            position: absolute;
+            color: black;
+        }
+        .select1{
+            position: absolute;
+            top: 200px;
+            right: 57px;
+            display: inline;
+        }
+        .opt1{
+            display: inline;
+            width: 130px;
+            position: absolute;
+            top: 0px;
+            left: -130px;
+            text-align: right;
+        }
+        .input4{
+            position: absolute;
+            top: 250px;
+        }
+        .select2{
+            position: absolute;
+            top: 10px;
+            width: 640px;
+        }
+        .input5{
+            position: absolute;
+            top: 330px;
+        }
+        .input6{
+            position: absolute;
+            top: 330px;
+            right: 60px;
+        }
+        span{
+            position: absolute;
+            bottom: 250px;
+        }  
+        .skyblue{
+            height: 30px;
+            background-color: skyblue;
+            color: white;
+            border-color: skyblue;
+            width: 640px;
+            position: absolute;
+            top: 530px;
+        } 
+        .span2{
+            position: absolute;
+            top: 575px;
+            right: 330px;
+            display: inline-flex;
+        }
+        h3{
+            margin-right: 10px;
+        }
+        h4{
+            color: rgb(16, 105, 140);
+        }
+        h5{
+            position: absolute;
+            bottom: 85px;
+            opacity: 0.5;
+            left: 50px;
+            font-size: 20px;
+        }
+        .i1{
+            position: absolute;
+            top: 50px;
+            color: black;
+            left: 50px;
+        }
+        @media screen and (max-width:550px)
+        {
+            .right{
+                width: 600px;
+                position: absolute;
+                top: 500px;
+            }
+        }
+     </style>
+</head>
+<body>
+    <h2>Company name</h2>
+    <div class="main">
+        <div class="left">
+            <img src="../images/login.jpg" alt="">
+            <h1>Create an account</h1>
+            <h5>create a  minimal account using bootstrap and html 5<br>HTML Form Elements<br>Bootstrap 5</h5>
+        </div>
+        <div class="right">
+            <div class="input">
+                <i class="fa-solid fa-user icon" ></i>
+                <input type="text" placeholder="First Name" class="input-field">
+            </div>
+            <div class="input2">
+                <i class="fa-solid fa-user icon" ></i>
+                <input type="text" placeholder="Last Name" class="input-field">
+            </div>
+            <div class="input3">
+                <i class="fa-solid fa-envelope icon"></i>
+                <input type="text" placeholder="Email Address" class="input-field2">
+            </div>
+            <div class="select1">
+                <span class="i1"><i class="fa-solid fa-phone icon"></i></span>
+                <select class="opt1">
+                    <option value="none">+91</option>
+                    <option>+21</option>
+                    <option>+01</option>
+                </select>
+                <input type="text" placeholder="Mobile Number" class="long2 ">
+            </div>
+            <div class="input4">
+                 <select class="select2 icon">
+                    <option value="none"><i class="fa-solid fa-user-tie"></i>Choose Your Job</option>
+                    <option>Software Engineer</option>
+                    <option>Web Designer</option>
+                    <option>Architect</option>
+                </select>
+            </div>
+            <div class="input5">
+                <i class="fa-solid fa-lock icon"></i>
+                <input type="text" placeholder="Password" class="input-field">
+            </div>
+            <div class="input6">
+                <i class="fa-solid fa-lock icon"></i>
+                <input type="text" placeholder="Confirm Password" class="input-field">
+            </div>
+            <button class="blue">Create Your Account</button>
+            <span><hr><p>or</p><hr></span>
+            <button class="blue2">Continue with facebook</button>
+            <button class="skyblue">Continue with twitter</button>
+            <span class="span2"><h3>Already registered?</h3>
+                <h4>login</h4></span>
+        </div>
+    </div>
+</body>
+</html>

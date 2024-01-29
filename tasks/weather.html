@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Poppins', sans-serif;
+        }
+        body{
+            background-color: aliceblue;
+        }
+        .top{
+            height: 100px;
+            width: auto;
+            background-color: #176B87;
+            color: white;
+        }
+        .head{
+            padding: 30px;
+        }
+        .left{
+            height: 400px;
+            width: 400px;
+            margin: 40px 30px 0 70px;
+            padding: 20px;
+            float: left;
+        }
+        input{
+            width: 400px;
+            height: 40px;
+            margin: 20px 0 10px 0;
+            font-size: 17px;
+        }
+        button{
+            height: 40px;
+            width: 400px;
+            font-size: 20px;
+            margin: 20px 100px 20px 0px;
+            color: white;
+        }
+        .search{
+            background-color: #176B87;
+            border-color: #176B87;
+        }
+        hr{
+            width: 175px;
+            display: inline-flex;
+        }
+        p{
+            display: inline;
+            margin: 0 15px 0 15px;
+        }
+        .loc{
+             background-color: silver;
+             border-color: rgb(250, 248, 248);   
+        }
+        .righttop{
+            height: 150px;
+            width: 830px;
+            background-color: #176B87;
+            color: white;
+            float: right;
+            margin: 40px 70px 30px 10px;
+            border-radius: 5px;
+            padding: 28px;
+            position: relative;
+        }
+        .i{
+            font-size: 60px;
+            float: right;
+            position: absolute;
+            top: 48px;
+            right: 120px;
+        }
+        h5{
+            float: right;
+            position: absolute;
+            top: 120px;
+            right: 90px; 
+            font-size: 17px;
+        }
+        .rightbottom{
+            height: 300px;
+            width: 888px;
+            opacity: 0.9;
+            color: black;
+            float: right;
+            margin: 5px 70px 30px 0;
+            border-radius: 5px;
+            position: relative;
+        }
+        .div{
+            height: 250px;
+            width: 170px;
+            opacity: 0.9;
+            background-color: #607274;
+            border-radius: 5px;
+            float: left;
+            margin-right: 29px;
+            color: white;
+            padding: 15px;
+        }
+        .divl{
+            height: 250px;
+            width: 170px;
+            background-color: #607274;
+            border-radius: 5px;
+            float: right;
+            color: white;
+            padding: 15px;
+        }
+        .icons{
+            font-size: 50px;
+            margin-bottom: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <center>
+            <h1 class="head">Weather Dashboard</h1>
+        </center>
+    </div>
+    <div class="left">
+        <h2>Enter a city name:</h2>
+        <input type="text" placeholder="E.g.,New York, London, Tokyo">
+        <button class="search">Search</button>
+        <hr><p>or</p><hr>
+        <button class="loc">Use Current Location</button>
+    </div>
+    <div class="righttop">
+        <h2>HYD (2024-01-06)</h2><br>
+        <h4>Temperature: 21.08 degreecelcius</h4><br>
+        <h4>Wind: 4.31 M/S</h4><br>
+        <h4>Humidity: 76%</h4>
+        <span><i class="fa-solid fa-cloud-sun-rain i" style="color: #f1f5fb;"></i></span>
+        <h5>Moderate Rain</h5>
+    </div>
+    <div class="rightbottom">
+        <h1>4-Day Forecast</h1>
+        <br>
+        <div class="div">
+            <br>
+            <h4>(2024-01-07)</h4>
+            <br>
+            <span><i class="fa-solid fa-cloud-sun icons" style="color: white"></i></span>
+            <h4>Temperature: 21.08 C</h4><br>
+            <h4>Wind: 4.31 M/S</h4><br>
+            <h4>Humidity: 76%</h4>
+        </div>
+        <div class="div">
+            <br>
+            <h4>(2024-01-08)</h4>
+            <br>
+            <span><i class="fa-solid fa-sun icons" style="color: #cf9c61;"></i></span>
+            <h4>Temperature: 21.08 C</h4><br>
+            <h4>Wind: 4.31 M/S</h4><br>
+            <h4>Humidity: 76%</h4>
+        </div>
+        <div class="div">
+            <br>
+            <h4>(2024-01-09)</h4>
+            <br>
+            <span><i class="fa-solid fa-cloud-bolt icons" style="color: #92e9e9;"></i></span>
+            <h4>Temperature: 21.08 C</h4><br>
+            <h4>Wind: 4.31 M/S</h4><br>
+            <h4>Humidity: 76%</h4>
+        </div>
+        <div class="divl">
+            <br>
+            <h4>(2024-01-)</h4>
+            <br>
+            <span><i class="fa-solid fa-cloud-showers-heavy icons" style="color: #b8b8b8;"></i></span>
+            <h4>Temperature: 21.08 C</h4><br>
+            <h4>Wind: 4.31 M/S</h4><br>
+            <h4>Humidity: 76%</h4>
+        </div>
+    </div>
+</body>
+</html>

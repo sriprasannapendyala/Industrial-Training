@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media queries</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .top{
+            height: 500px;
+            width: auto;
+        }
+        .bdiv{
+            height: 450px;
+            width: 730px;
+            margin: 10px;
+        }
+        .green{
+            background-color: lightgreen;
+            border-color: lightgreen;
+            float: left;
+        }
+        .greenb{
+            background-color: lightgreen;
+            border-color: lightgreen;
+            float: right;
+        }
+        .sdiv{
+            height: 210px;
+            width: 350px;
+            margin: 9px;
+        }
+        .purple{
+            background-color: purple;
+            border-color: purple;
+            float: left;
+        }
+        .red{
+            background-color: red;
+            border-color: red;
+            float: left;
+        }
+        .orange{
+            background-color: orange;
+            border-color: orange;
+            float: left;
+        }
+        .pink{
+            background-color: pink;
+            border-color: pink;
+            float: left;
+        }
+        @media  screen and (max-width:1236px) and (min-width:924px) {
+            .sdiv{
+                width: 35%;
+                height: 20%;
+            }
+        }
+        @media  screen and (max-width:1181px) and (min-width:1024px) {
+            .sdiv{
+                width: 48%;
+                height: 20%;
+            }
+            .bdiv{
+                width: 100%;
+            }
+        }
+        @media  screen and (max-width:1024px) and (min-width:600px) {
+            .sdiv{
+                width: 25%;
+                height: 19%;
+            }
+            .bdiv{
+                width: 100%;
+            }
+            .sdiv{
+                width: 47%;
+            }
+        }
+        @media  screen and (max-width:600px)  {
+
+            .bdiv{
+                width: 100%;
+            }
+            .sdiv{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <div class="bdiv green"></div>
+        <div class="sdiv purple"></div>
+        <div class="sdiv red"></div>
+        <div class="sdiv orange"></div>
+        <div class="sdiv pink"></div>
+    </div>
+    <div class="top">
+        <div class="bdiv greenb"></div>
+        <div class="sdiv purple"></div>
+        <div class="sdiv red"></div>
+        <div class="sdiv orange"></div>
+        <div class="sdiv pink"></div>
+    </div>
+</body>
+</html>

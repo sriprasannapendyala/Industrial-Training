@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+    <style>
+        /* .div1{
+            height: 200px;
+            width: 200px;
+            background-color: plum;
+            border-radius: 100px;
+            transition: all 5s;
+        }
+        .div1:hover{
+            transform: translateX(1000px);
+            transform: rotate(100deg, 100deg);
+        } */
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Poppins', sans-serif;
+        }
+        .div1{
+            height: 150px;
+            width: 150px;
+            border-radius: 100px;
+            text-align: center;
+            position: relative;
+            animation-name: main;
+            animation-duration: 5s;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: forwards;
+        }
+        @keyframes main{
+            from{
+                background-color: black;
+                left: 10px;
+            }
+            to{
+                left: 690px;
+                background-color: black;
+                transform: rotate(360deg);
+            }
+            10%{
+                background-image: url(../images/nopening.gif);
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+            }
+            100%{
+                background-image: url(../images/icon.png);
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+            }
+        }
+        .div2{
+            height: 150px;
+            width: 150px;
+            border-radius: 100px;
+            text-align: center;
+            position: relative;
+            animation-name: two;
+            animation-duration: 5s;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: forwards;
+        }
+        @keyframes two{
+            from{
+                left: 10px;
+                background-color: aliceblue;
+            }
+            to{
+                height: 200px;
+                width: 300px;
+                left: 620px;
+                transform: skew(20deg);
+                transform: rotate(180deg);
+                background-color: black;
+            }
+        }
+        .div3{
+            height: 100px;
+            width: 300px;
+            position: relative;
+            animation-name: wel;
+            animation-duration: 5s;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: forwards;
+        }
+        @keyframes wel {
+            from{
+                top: 0px;
+                left: 680px;
+                opacity: 0;
+            }
+            to{
+                top: 50px;
+                left: 680px;
+            }
+            100%{
+                opacity: 1;
+            }
+            
+        } 
+        /* @keyframes main{
+            from{
+                background-color: pink;
+            }
+            to{
+                background-color: slategray;
+                height: 400px;
+                width: 400px;
+                transform: translateY(80px);
+            }
+            
+        } */
+
+    </style>
+</head>
+<body>
+    <!-- <div class="div1"></div> -->
+        <div class="div1"></div>
+        <div class="div2"></div>
+        <div class="div3"><h2>Hello! Netflix user</h2></div>
+</body>
+</html>
