@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    let arr=[
+    {
+        name:'sri',
+        num:43,
+        clg:'aec'
+    },
+    {
+        name:'prasanna',
+        num: 99,
+        clg:'acoe'
+    },
+    {
+        name:'pendyala',
+        num: 88,
+        clg:'acet'
+    }
+    ]
+
+    //printing 2nd user num using "dot notation"
+    console.log(arr[1].num)
+
+    //printing  1st user name using "array notation"
+    console.log(arr[0]['name'])
+
+    //creating normal array of names by iterating through arr
+    let names=arr.map((n) => n.name)
+    console.log(names)
+</script>

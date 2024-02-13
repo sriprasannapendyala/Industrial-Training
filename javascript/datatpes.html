@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datatypes</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    //string
+    let str='sri'
+    console.log(str, typeof(str))
+
+    //number
+    let num=43
+    console.log(num, typeof(num))
+
+    //undefined
+    let n
+    console.log(n, typeof(n))
+
+    //boolean
+    let boo=true
+    console.log(boo, typeof(boo))
+
+    //null
+    let nul=null
+    console.log(nul, typeof(nul))
+
+    //array
+    let arr=['sri' , 43 , true , null]
+    console.log(typeof(arr))
+    arr[2]=false
+    console.log(arr)
+    console.log(arr.length)
+
+    //object
+    let obj={
+        name:'sri',
+        num:43,
+        clg:'aec'
+    }
+    console.log(obj)
+    console.log(obj.name) //dot notation
+    console.log(obj['clg']) //array notation
+    obj.clg='AU' //modifying prop
+    console.log(obj.clg)
+    obj.age=18 //adding prop
+    console.log(obj)
+    console.log(obj.age)
+    delete obj.age //deleting prop
+    console.log(obj)
+    console.log('age' in obj) //checking if prop exists {returns true or false only}
+    console.log('name' in obj)
+    </script>
