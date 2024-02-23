@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap/bootstrap/css/bootstrap.min.css">
+    <script src="../bootstrap/bootstrap/js/bootstrap.bundle.js"></script>
+    <title>JS</title>
+    <style>
+        body{
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let st='sri prasanna'
+        let st2='akshaya'
+        let st3='yash'
+        function print(str){
+            document.write(str + '<br>');
+        }
+
+        print('string name=' +'<b>'+st+ '</b>')
+
+        //str len
+        print(st.length)
+
+        //char at
+        print('character at index 2 ='+ st.charAt(2))
+
+        //index of
+        print('index of s ='+ st.indexOf('s'));
+        print('last index of n= ' + st.lastIndexOf('n'))
+
+        //converting string to array
+        console.log(st.split(""))
+
+        let newst='sri-prasa&nna-pen&dyala'
+        console.log(newst.split('-'))
+        console.log(newst.split('&'))
+
+        //removing spaces
+        print('trim of string=' + st.trim())
+
+        //upper and lowercase conversion 
+        print('uppercase=' + st.toUpperCase())
+        print('lowercase=' + st.toLowerCase())
+
+        //concat
+        print('concat=' + st.concat(st2))
+        print('concat=' + st.concat(st2,st3))
+
+        //stars with and end with returns boolean
+        print('starts with=' + st.startsWith('s'))
+        print('ends with=' + st.endsWith('s'))
+
+        //str.slice(startpos, endpos-1) & allows -ve values
+        print('str slice='+ st.slice(1,10)) //prints from 1-9
+        print('str slice='+ st.slice(5)) 
+        print('str slice='+ st.slice(-8))
+        print('str slice='+ st.slice(-8,-6)) 
+      
+        //substring method prints the values in b/w given values
+        //doesn't allows null values
+        print('substring b/w 2 & 8=' + st.substring(2,8))
+
+        //substr(startpos, length of chars to be printed)
+        print('8 characters substr from 4th place=' + st.substr(4,8))
+
+        //repeating the string
+        print('repating 0 time=' + st.repeat(0))
+        print('repating 1 time=' + st.repeat(1))
+        print('repating 4 time=' + st.repeat(4))
+
+        //replacing string
+        print('replacing string=' + st.replace('sri' , 'sree'))
+
+        //includes
+        print('includes=' + st.includes('pendyala'))
+    </script>
+</body>
+</html>

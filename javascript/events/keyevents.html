@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>key</title>
+</head>
+<body>
+    <p id="id"></p>
+    <p id="id1"></p>
+    <label>enter color:</label>
+    <input type="text" onkeyup="prin()" id="ch"><br>
+    <label for="">enter name:</label>
+    <input type="text" onkeydown="check(this.value.length)">
+</body>
+<script>
+    function prin()
+    {
+        let ma=document.getElementById('ch').value
+        document.getElementById('id').innerText=ma
+        document.body.style.backgroundColor=ma
+    }
+    function check(val){
+        let msg=document.getElementById('id')
+        let msg2=document.getElementById('id1')
+        let ch=document.getElementsByTagName('input')
+        if(val<3){
+            msg.style.color='red';
+            msg.innerText='chars must be >3'
+            msg2.innerText='length is:'+ val;
+            ch[1].style.outlineColor='red';
+        }
+        else{
+            msg.innerText=""
+            ch[1].style.borderColor='black'
+            msg2.innerText='length is:'+ val;
+            ch[1].style.outlineColor='black';
+        }
+    }
+    // function change(val){
+    //     let ch=document.getElementsByTagName('input')
+    //     if(val.length<3){
+    //         ch[1].style.borderColor='red'
+
+    //     }
+    // }
+</script>
+</html>

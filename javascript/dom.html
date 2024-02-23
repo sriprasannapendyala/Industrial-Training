@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet"> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h1 id="h1">Document Object Model</h1>
+    <p class="p">DOM is a way to represent the webpage in a structured hierarchical way so that it will become easier for programmers and users to glide through the document.</p>
+    <p class="para">DOM is a way to represent the webpage in a structured hierarchical way so that it will become easier for programmers and users to glide through the document.</p>
+    <ul>
+        <li>AEC</li>
+        <li>ACET</li>
+        <li>ACOE</li>
+    </ul>
+    <div id="div"></div>
+    <img src="../images/bh.jpg" alt="" id="link">
+    <button id="button">Event Listner</button>
+
+    <img src="../images/sky.jpg" alt="" height="100" width="100" id="im">
+    <button id="change">change image</button>
+    <script>
+        //to console entire doc structure
+        console.log(document)
+    
+        //to console specific part in doc structure
+        console.log(document.head)
+    
+        //to get and change the styles of element by its id 
+        let h1=document.getElementById('h1')
+        h1.style.textAlign='center'
+        h1.style.fontFamily='poppins,sans-serif'
+    
+        //to get and change the styles of element by its class
+        let p=document.getElementsByClassName('para')
+        // p.style.color='red'  (dom.html:27  Uncaught TypeError: Cannot set properties of undefined (setting 'color'))
+        p[0].style.color='blue'    
+
+        //to get element by tagname
+        let para=document.getElementsByTagName('p')
+        para[1].style.color='pink'
+
+        //changing list values
+        const list=document.getElementsByTagName('li')
+        list[0].innerHTML='<b>Aditya Engineering College</b>'
+            // list[0].style.fontWeight='1000'
+        list[1].innerHTML='Aditya College of Engineering and Technology'
+        list[1].style.border='1px solid lightblue'
+        list[2].innerHTML='Aditya College of Engineering'
+        list[2].style.fontFamily='poppins,sans-serif'
+        
+        //using queryselector
+        let q=document.querySelector('p')
+        q.style.fontSize='80px'
+
+        //using queryselectorall
+        //v can select class or id or tag
+        let q2=document.querySelectorAll('p')
+        q2[1].style.backgroundColor='yellow'
+        q2[0].style.color='pink'
+
+        //using loop
+        const elements = document.querySelectorAll('li,#h1,.para');
+        for (let i = 0; i < elements.length; i++) {
+        elements[i].style.color = 'red';
+        }
+
+        //setattribute
+        let anc=document.getElementById('link')
+        anc.setAttribute('href', 'https://www.w3schools.com/css/css_boxmodel.asp')
+        anc.setAttribute('height','150px')
+        anc.setAttribute('width','200px')
+
+        //createelement
+        // let ne=document.createElement('button')
+        // ne.innerText('don\'t click')
+        // ne.style.cssText=`height: 50px;
+        //                     width: 150px;`       
+        
+
+        //event listner
+        let eve=document.getElementById('button')
+        eve.addEventListener('click',daate)
+        function daate(){  
+            document.write(Date());
+        }
+
+
+        //task
+        let ch=document.getElementById('change')
+        ch.addEventListener('click',func)
+        function func(){
+            let im=document.getElementById('im')
+            im.setAttribute('src','../images/bh.jpg')
+        }
+
+    </script>
+</body>
+</html>      

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="../../images/sky.jpg" alt="" height="100" width="100" id="im">
+    <button id="change">change image</button>
+    <br><br>
+    <table border="1" width="400px">
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td> 
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td> 
+        </tr>
+    </table>
+    <button id="rev">Reverse</button>
+
+</body>
+<script>
+    //code to change image
+    let ch=document.getElementById('change')
+    ch.addEventListener('click',func)
+    function func(){
+        let im=document.getElementById('im')
+        im.setAttribute('src','../../images/bh.jpg')
+    }
+
+    //code to print numbers in tables dynamically
+    let k=0;
+    let td=document.getElementsByTagName('td')
+    for(let i=1;i<=td.length;i++)
+    {
+        td[k].innerHTML=i
+        k++;
+    }
+
+    //code to print in reverse dynamically
+    let bt=document.getElementById('rev')
+    bt.addEventListener('click',rev)
+    function rev(){
+        let k=0
+        let td=document.getElementsByTagName('td')
+        for(let i=td.length;i>0;i--)
+        {
+            td[k].innerHTML=i
+            k++;
+        }
+    }
+</script>
+</html>

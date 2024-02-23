@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form events</title>
+</head>
+<body>
+    <form id="form">
+        <p id="p"></p>
+        <label>enter name:</label>
+        <input type="text" id="name" name="name" onchange="change()"><br>
+        <label>enter pwd:</label>
+        <input type="password" id="pwd" name="pwd" onchange="change()"><br>
+        <select name="clg" id="sel" onchange="change()">
+            <option value="Aditya">Aditya</option>
+            <option value="vishnu">vishnu</option>
+            <option value="pragati">pragati</option>
+        </select>
+        <input type="button"  value="submit" id="b1" onclick="submitf()">
+        <input type="button" value="reset" id="b2" onclick="resetf()">
+    </form>
+</body>
+<script>
+    function submitf(){
+        document.getElementById('form').submit()
+    }
+    function resetf(){
+        document.getElementById('form').reset()
+    }
+    function change(){
+        let ch=document.getElementById('name')
+        ch.value=ch.value.toUpperCase();
+        let sel=document.getElementById('sel')
+        document.getElementById('p').innerHTML=sel.value
+        
+    }
+</script>
+</html>

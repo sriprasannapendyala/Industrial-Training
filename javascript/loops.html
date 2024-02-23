@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loops</title>
+</head>
+<body>
+    <button onclick="game()">game..?</button>
+    <script>
+        function game(){
+            let num=0
+        let arr=['name','age','pin']
+        for(let i=0;i<3;i++)
+        {
+            if(num===0){
+            arr[num]=prompt('enter ur ' +  arr[num])
+            }
+            else{
+                prompt('enter ur ' +  arr[num])
+            }
+            num++;
+        }
+        if(arr[0]!=='prasanna'){
+        document.write('Congrats!! ', arr[0] ,' youre a bad...')
+        }
+        else{
+            document.write('whatsup!!! mam')
+        }
+    }
+    </script>
+</body>
+</html>

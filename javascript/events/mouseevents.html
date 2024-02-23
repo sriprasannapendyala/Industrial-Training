@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../../bootstrap/bootstrap/css/bootstrap.min.css">
+    <script src="../../bootstrap/bootstrap/js/bootstrap.bundle.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouse events</title>
+</head>
+<body>
+    <p id="img1"></p>
+    <button id="btn1">click it</button>
+    <button onmouseover="over()" id="btn2">hover it</button>
+</body>
+<script>
+    function click(){
+        
+    }
+    function over(){
+        document.body.style.backgroundColor='white'
+    }
+
+
+    //2nd way 
+    //using normal function
+    document.getElementById('btn1').ondblclick=change()
+    function change(){
+        document.body.getElementById('img1').innerHTML='u clicked it '; 
+    }
+
+    //using anonymous function
+    let b2=document.getElementById('btn2')
+    b2.onmouseout=change2();
+    function change2(){
+        document.body.getElementsByTagName('img')[0].src='../../images/i1.jpeg'; 
+
+    }
+</script>
+</html>

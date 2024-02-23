@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>focus</title>
+</head>
+<body>
+    <!-- onfocus -->
+    <label for="">focus this field</label>
+    <input type="text" onfocus="work(this)">
+    <!-- onblur -->
+    <label for="">blur this field</label>
+    <input type="text" onblur="work2(this, 'pink')">
+    <!-- focusin -->
+    <label for="">focusin this field</label>
+    <input type="text" id="focin">
+    
+
+</body>
+<script>
+    function work(val){
+        val.style.outlineColor='red';
+        val.style.color='green'
+    }
+    function work2(e, col){
+        e.style.backgroundColor=col;
+    }
+    let focu=document.getElementById('focin')
+    focu.addEventListener('focusin',work3)
+    function foc3(){
+        focu.style.color='green'
+    }
+</script>
+</html>

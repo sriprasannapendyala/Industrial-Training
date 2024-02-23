@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>date</title>
+</head>
+<body>
+    <script>
+        const day=['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday']
+        const month=['january', 'february', 'march', 'april', 'may', 'june', 'july' ,'august', 'september', 'october', 'november', 'december']
+        const d=new Date();    
+        document.write(d + "<br>");
+        document.write("current year:" + d.getFullYear() + "<br>");
+        document.write("current month:" + (d.getMonth()+1) + "<br>");
+        document.write('current month is---' + month[d.getMonth()] + '<br>')
+        document.write("current date:" + d.getDate() + "<br>");
+        document.write("current day:" + d.getDay() + "<br>");
+        document.write('current day is---' + day[d.getDay()] + '<br>')<
+        document.write("current hour:" + d.getHours() + "<br>");
+        document.write("current minutes:" + d.getMinutes() + "<br>");
+    </script>
+</body>
+</html>

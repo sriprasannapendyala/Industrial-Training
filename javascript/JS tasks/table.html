@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+</head>
+<body>
+    <table border="1" width="500px" height="100px">
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <button id="change">change</button>
+</body>
+<script>
+    let bt=document.getElementById('change')
+    bt.addEventListener('click',change)
+
+    function change(){
+    let arr=['red', 'purple','green', 'orange','pink','grey','yellow','brown','orange']
+    let td=document.getElementsByTagName('td')
+    for(let i=0;i<td.length;i++)
+    {
+        td[i].style.backgroundColor=arr[i]
+    }
+    for(let i=0;i<td.length;i++)
+    {
+        td[i].style.color='white'
+        td[i].innerHTML=arr[i]
+    }
+
+    //to print names
+    // for(let i=0;i<=6;i+=3)
+    // {
+        // td[i].innerHTML='raju'
+        // td[i+1].innerHTML='siva'
+        // td[i+2].innerHTML='rani'
+    // }
+}
+</script>
+</html>
