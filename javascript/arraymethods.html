@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array methods</title>
+</head>
+<body>
+    <h2>array methods</h2>
+    <ul>
+        <li>push</li>
+        <li>pop</li>
+        <li>shift</li>
+        <li>unshift</li>
+        <li>concat</li>
+        <li>slice</li>
+        <li>splice</li>
+        <li>indexof</li>
+        <li>sort</li>
+    </ul>
+    <script>
+        let arr=['sri', 'prasanna', 'pendyala']
+        let arr2=['cme','43','mdp']
+        //push
+        console.log(arr.push('sree'))  // 4 
+        //pop
+        console.log(arr.pop())  // sree 
+        //shift
+        console.log(arr.shift())    // sri
+        //unshift
+        console.log(arr.unshift('sri')) // 3
+        //concat
+        let comb=arr.concat(arr2)   //(6) ['sri', 'prasanna', 'pendyala', 'cme', '43', 'mdp']
+        console.log(comb)
+        //slice(start,end-1)
+        console.log(comb.slice(1,5))    //(4) ['prasanna', 'pendyala', 'cme', '43']
+        //splice(startpos, length, 'addedvalues')
+        let sp=comb.splice(1,2,'abc','xyz')
+        console.log(comb)   //(6) ['sri', 'abc', 'xyz', 'cme', '43', 'mdp'] 
+        //indexof
+        console.log(comb.indexOf('cme'))    //3
+        //sort
+        console.log(comb.sort())    //(6) ['43', 'abc', 'cme', 'mdp', 'sri', 'xyz']
+
+
+        //New version Array methods
+        let arr1=['tejaswi','sree','purna','akshaya','devi'];
+
+    //MAP function
+
+    //--->syntax
+            //for named functions  == arrname.map(functionname)
+            //for anonymous functions =arrname.map(function(current_ele,index_no,array){//code//})
+            //for arrow functions == arrname.map((current_ele,index_no,array)=>{code})
+
+    //map trverse through the every element in the array and the changes won't apply to the og array 
+
+    //named
+    let named=arr1.map(namedfun);
+    function namedfun(ele,index,arr){
+        return 'current element and index='+ele+index;
+    }
+    console.log(named);
+
+    //arrow
+    let arrowed=arr1.map((ele,inde,arr)=>{return inde+' '+ele});
+    console.log(arrowed);
+
+    //anonymous
+    let strange=arr1.map(function(e,i,arr){console.log('current element = '+e)});
+
+
+
+    //FOREACH
+    // Syantaxes are same as map
+    //functionality --->SAME SAME BUT DIFFELENT...
+        //Differnce ---> map returns a new array with the results of the function, while forEach does not return anything and only modifies the original array.
+    let salaries=[20000,30000,123210,234654];
+    let x=salaries.forEach(function(ele,index){
+        let hike=ele/10;
+        salaries[index]=ele+hike;
+        return salaries[index];
+    })
+    console.log(salaries);
+    console.log(x);//(prints undefined)//SEE forEach return only undeifined and change the og array but map can't do both of those
+
+    //FILTER
+    //syntax --->filter(function(elemet,i)(//code return condition))
+    //returns the filterd element that is filtered based on condition
+    let xin=[1234,2345,345,671,2435,132876];
+    let even=xin.filter((e,i)=>{return e%2==0});     
+    console.log(xin,even);
+
+    //REDUCE
+    //total 4 args,min-2args,max-4args
+    //returns a single element
+    //syntax-->arr.reduce(function(accumulator,ele,index,arr),default value for the accumlatr)
+    let red=[132,5464,567,123,789,874352];
+    let x1=red.reduce((acc,e,i,arr)=>{return acc+e},0);
+    let large=red.reduce((acc,e,i,arr)=>{
+        console.log(acc);
+        if(acc>e){
+            return acc;
+        }
+        else{
+            return e; 
+        }
+    },red[0])
+    // console.log(x1);
+    // console.log(large);
+
+
+
+        //FIND(arr,index)
+
+        //arrow
+        let names=['sri','prasanna','pendyala']
+        let getname=names.find((name,index)=>{
+            return name.startsWith('p')
+        })
+        console.log(getname)
+
+        //named
+        let name=names.find(finding)
+        function finding(name,index){
+            return name.endsWith('i')
+        }
+        console.log(name)
+
+        //anonymous
+        let namee=names.find(function(name,index){return name+index});
+        console.log(namee)
+
+
+
+        //arr.some(callback(element,index,array),thisArg);
+        //arrow
+        let resi=['mdp','kkd','rjy']
+        let check=resi.some((resi,i,arr)=>{
+            return resi=='mdp'
+        })
+        console.log(check)
+
+        //named
+        console.log( resi.some(checkk))
+        function checkk(resi,i,arr){
+            return resi=='mdv'
+        }
+
+
+
+        //every
+        let marks=[90,99,87,78,69,96]
+        let passs=marks.some((mark,i)=>{
+            console.log(mark)
+            return mark>69
+        })
+    </script>
+</body>
+</html>
+
+
+
+
+

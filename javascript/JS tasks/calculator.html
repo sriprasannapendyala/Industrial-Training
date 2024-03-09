@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../../bootstrap/bootstrap/css/bootstrap.min.css">
+    <script src="../../bootstrap/bootstrap/js/bootstrap.bundle.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+</head>
+<body class="justify-content-center">
+    <div class="col-5 text-center mx-auto mt-5 ms-5 mx-auto">
+        <div class="row mb-2">
+            <input type="text" id="inp" class="display-inline col-6 me-2 ms-1" multiple>
+            <button id="clear" onclick="document.getElementById('inp').value = ''" class="btn btn-secondary text-center col-2">C</button>
+        </div>
+        <div class="row mb-2">
+            <button onclick="show('one')" value="1" id="one" class="btn btn-secondary text-center col-2 me-1">1</button>
+            <button onclick="show('two')"  value='2' id="two" class="btn btn-secondary text-center col-2 me-1">2</button>
+            <button onclick="show('three')" value='3' id="three" class="btn btn-secondary text-center col-2 me-1">3</button>
+            <button onclick="show('by')"  value='/' id="by" class="btn btn-secondary text-center col-2 ">/</button>
+        </div>
+        <div class="row mb-2">
+            <button onclick="show('four')" value='4' id="four" class="btn btn-secondary text-center col-2 me-1">4</button>
+            <button onclick="show('five')" value='5' id="five" class="btn btn-secondary text-center col-2 me-1">5</button>
+            <button onclick="show('six')" value='6' id="six" class="btn btn-secondary text-center col-2 me-1">6</button>
+            <button onclick="show('star')" value='*' id="star" class="btn btn-secondary text-center col-2 ">*</button>
+        </div>
+        <div class="row mb-2">
+            <button onclick="show('seven')" value='7' id="seven" class="btn btn-secondary text-center col-2 me-1">7</button>
+            <button onclick="show('eight')" value='8' id="eight" class="btn btn-secondary text-center col-2 me-1">8</button>
+            <button onclick="show('nine')" value='9' id="nine" class="btn btn-secondary text-center col-2 me-1">9</button>
+            <button onclick="show('hypen')" value='-' id="hypen" class="btn btn-secondary text-center col-2 ">-</button>
+        </div>
+        <div class="row mb-2">
+            <button onclick="show('zero')" value='0' id="zero" class="btn btn-secondary text-center col-2 me-1">0</button>
+            <button onclick="show('dot')" value='.' id="dot" class="btn btn-secondary text-center col-2 me-1">.</button>
+            <button onclick="oper(inp.value)" value='=' id="equal" class="btn btn-secondary text-center col-2 me-1">=</button>
+            <button onclick="show('plus')" value='+' id="plus" class="btn btn-secondary text-center col-2 ">+</button>
+        </div>
+    </div>
+    </body>
+    <script>
+        var but=document.getElementsByTagName('button')
+        function show(val){
+            let button=document.getElementById(val)
+            var inp=document.getElementById('inp')
+            inp.value+=(button.value)
+        }
+        function oper(value){
+            try{
+                var arr=[]
+                var inp=document.getElementById('inp')
+                inp.value=value
+                var res=eval(inp.value)
+                inp.value=res;
+            }catch(error){
+                inp.value='syntax errorrrrrr!'
+            }
+        }
+
+    </script>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task</title>
+</head>
+<body>
+    <h3>Task 1</h3>
+    <button onclick="fun()">click to call a function</button><br><hr>
+    <h3>Task 2</h3>
+    <input type="text" name="" id="inp">
+    <button onclick="fun1()">click</button><br>
+    <span></span><br><hr>
+    <h3>Task 3</h3>
+    <form id="myform">
+        <label>Enter Name:</label>
+        <input type="text" autofocus autocomplete="off">
+        <br>
+        <label>Enter Number:(MAXLENGTH:10)</label>
+        <input type="tel" maxlength="10">
+        <br>
+        <label>Enter email:</label>
+        <input type="email" placeholder="abc@gmail.com">
+        <br>
+        <label>*Enter password:</label>
+        <input type="password">
+        <br>
+        <label>confirm password:</label>
+        <input type="password" required>
+        <br>
+        <label>Gender:</label><br>
+        Male<input type="radio" name="gender"><br>
+        Female<input type="radio" name="gender">
+        <br>
+        <label>choose Branch:</label><br>
+        CME<input type="checkbox"><br>
+        CCN<input type="checkbox"><br>
+        ECE<input type="checkbox">
+        <br>
+        <label>Enter state:</label><br>
+        <select>
+            <option>AP</option>
+            <option>TS</option>
+            <option>KA</option>
+        </select>
+        <br>
+        <label>Enter address:</label><br>
+        <textarea></textarea>
+        <br>
+        <input type="reset">
+        <input type="button" onclick="check()" value="submit">
+        
+    </form>
+    <script>
+        //funtion1
+       function fun(){
+        console.log('function called')
+       }
+
+       //function2
+       function fun1(){
+        let input=document.getElementById('inp')
+        console.log(input.value)
+       document.getElementsByTagName('span')[0].innerHTML=input.value
+       }
+
+       //function3
+       function fun2(){
+        let input2=document.getElementById('inp2').value
+        if(input2=="")
+        {
+            alert('please enter input field')
+        }
+        else{
+            alert('you entered '+input2)
+        }
+       }
+
+       function check(){
+            
+            let inp=document.getElementsByTagName('input')
+            let sel=document.getElementsByTagName('select')
+            let ta=document.getElementsByTagName('textarea')
+            for(let i=0;i<ele[0].length;i++)
+            {
+                if(inp[i].value==undefined)
+                {
+                    alert('you didnnot entered one field')
+                }
+                else{
+                    alert('submitted')
+                }
+            }
+       }
+    </script>
+</body>
+</html>

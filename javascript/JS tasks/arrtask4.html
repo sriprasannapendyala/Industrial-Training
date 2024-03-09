@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Array of objects</h1>
+    <script>
+        let cllg1=[{
+            rollno:'43',
+            cllg:'Aect',
+            code:'249'
+        },
+        {
+            rollno:'66',
+            cllg:'Aeoc',
+            code:'255' 
+        },
+        {
+            rollno:'32',
+            cllg:'Aect',
+            code:'255'
+        },
+        {
+            rollno:'59',
+            cllg:'Acet',
+            code:'404'
+        },
+        {
+            rollno:'69',
+            cllg:'Aeoc',
+            code:'255'
+        }]
+        let cllgs=cllg1.filter(fun);
+        function fun(ele,index,arr){
+               return ele.cllg=='Aeoc';
+        }
+        console.log(cllgs)
+        for(i=0;i<=cllgs.length;i++)
+        {
+            document.write("Rollno:"+cllgs[i].rollno +"<br>")
+            document.write("cllg:"+cllgs[i].cllg +"<br>")
+            document.write("code:"+cllgs[i].code +"<br><br>")
+        }
+    </script>
+</body>
+</html>

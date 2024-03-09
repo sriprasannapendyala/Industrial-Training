@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>random</title>
+</head>
+<body>
+    <div>
+       <h2>Guess the number game</h2>
+       <p>guess a number b/wc 1 to 10</p>
+       <input type="text" name="" id="inp">
+       <button onclick="check()">submit</button>
+       <p id="p"></p>
+    </div>
+    <script>
+        // var h3=document.createElement('h3')
+        // h3.innerHTML='Guess the number game'
+        // var p=document.createElement('p')
+        // p.innerHTML='guess a number b/wc 1 to 10'
+        // var inp=document.createElement('input')
+        // inp.setAttribute('type','number')
+        // inp.setAttribute('id','inp')
+        // var but=document.createElement('button')
+        // but.addEventListener('click',cl)
+        // but.innerTEXT='submit guess'
+        // var val=document.getElementById('inp').value;
+        // var rad=(Math.random()*9)+1
+        function check(){
+        var val=document.getElementById('inp').value;
+        var rad=Math.floor(Math.random()*9)+1
+        var pa=document.getElementById('p')
+        console.log(rad)
+        if(rad==val){
+            pa.innerHTML='correct'
+        }
+        else{
+            pa.innerHTML='sorry'
+        }}
+    </script>
+</body>
+</html>

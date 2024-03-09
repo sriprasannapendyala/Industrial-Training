@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task</title>
+</head>
+<body>
+    <button onclick="add()">ADD ROW</button>
+    <table border="1" cellspacing="0">
+        <thead>
+            <tr>
+                <th>NAME</th>
+                <th>PIN</th>
+            </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+    </table>
+    <button onclick="load()">LOAD DATA</button>
+    <!-- table2 -->
+    <table border="1" cellspacing="0">
+        <thead>
+            <tr>
+                <th>NAME</th>
+                <th>pin</th>
+            </tr>
+        </thead>
+        <tbody id="table">
+            <tr>
+                <td>teju</td> 0
+                <td>66</td>1
+            </tr>
+            <tr>
+                <td>yash</td>2
+                <td>32</td>3
+            </tr>
+            <tr>
+                <td>akshaya</td>4
+                <td>69</td>5
+            </tr>
+        </tbody>
+    </table>
+    <input type="text" name="" id="inp" onkeydown="but()">
+    <p id="p"></p>
+</body>
+<script>
+    var arr=[
+        {
+            name:'sri',
+            pin:43
+        },
+        {
+            name:'prasanna',
+            pin:67
+        },
+        {
+            name:'sree',
+            pin:68
+        }
+    ]
+    //load
+    function load(){
+        var tbody=document.getElementById('tbody')
+        var row=document.createElement('tr')
+        var cell1=document.createElement('td')
+        var cell2=document.createElement('td')
+        for(let i=0;i<arr.length;i++){
+            var row=tbody.insertRow(i)
+            var cell1= row.insertCell(0)
+            var cell2= row.insertCell(1)
+            cell1.innerText=arr[i].name;
+            cell2.innerText=arr[i].pin;
+        }
+    }
+    //add
+    function add(){
+        let name=prompt('enter name')
+        let pin=prompt('enter pin')
+        var row=tbody.insertRow(0)
+        var cell1=row.insertCell(0)
+        var cell2=row.insertCell(1)
+        cell1.innerText=name;
+        cell2.innerText=pin; 
+    }
+    //find
+    function but(){
+    let names=['sri','prasanna','teju','yash']
+    let a=document.getElementById('inp').value
+    let res=names.find(name=>{
+        return name.startsWith(a)
+    })
+    if(res){
+        document.getElementById('p').innerHTML='found'
+    }
+    else{
+        document.getElementById('p').innerHTML='not found'
+    }}
+    //appending in array1
+    var array=[]
+    var name=[]
+    var pin=[]
+    const obj2=new Map();
+    var tbody2=document.getElementById('table')
+    var rows=tbody2.getElementsByTagName('tr')
+    var cells=tbody2.getElementsByTagName('td')
+    console.log(cells.length)
+    for(let i=0;i<cells.length;i+=2){
+        obj2.set(cells[i].innerText,cells[i+1].innerText)
+    }
+    array.push(obj2)
+    console.log(array)
+
+    //appending an array
+    var arr2=[]
+    let obj=new Object();
+    var tbody2=document.getElementById('table')
+    var rows=tbody2.getElementsByTagName('tr')
+    var cells=tbody2.getElementsByTagName('td')
+    console.log(rows.length,cells.length)
+    let k=0
+    for(let i=0;i<cells.length;i+=2){
+        let name=cells[i].innerText;
+        console.log(name)
+        let pin=cells[i+1].innerText;
+        console.log(pin)
+        obj[k]={name:name,pin:pin}
+        k+=1
+    }
+    arr2.push(obj)
+    console.log(arr2)
+</script>
+</html>

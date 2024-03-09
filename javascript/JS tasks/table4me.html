@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+</head>
+<body>
+    <!-- checking inpuut -->
+    <input type="text" name="" id="inp">
+    <button onclick="check()">check</button>
+    <p id="p"></p>
+    <!-- table -->
+    <table border="1" cellspacing="0" id="table">
+        <tr>
+            <th>name</th>
+            <th>clg</th>
+        </tr>
+    </table>
+</body>
+<script>
+    //checking input
+    function check(){
+    let mails=["sri@gmail.com","teju@gmail.com","yash@gmail.com","akshaya@gmail.com"]
+    let input=document.getElementById('inp').value;
+    let found=mails.find(mail=>{return mail==input})
+    if(found){
+        document.getElementById('p').innerHTML='found';
+    }
+    else{
+        document.getElementById('p').innerHTML='not found';
+    }}
+    //dynamic table
+    var arr=[
+        {
+            name:'sri',
+            clg:'aec'
+        },
+        {
+           name:'yasasree',
+           clg:'aec'
+        },
+       {
+            name:'chinnu',
+            clg:'acet'
+       }
+    ] 
+    let c='aec'
+    let fil=arr.filter((val,i,arr)=>{return c==val.clg})
+    for(let i=0;i<fil.length;i++){
+        let table=document.getElementById('table')
+        let row=table.insertRow(i+1);
+        let c1=row.insertCell(0);
+        let c2=row.insertCell(1);
+        c1.innerHTML=fil[i].name;
+        c2.innerHTML=fil[i].clg;
+    }
+</script>
+</html>

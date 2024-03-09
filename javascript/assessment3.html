@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assessment3</title>
+</head>
+<body>
+    <script>
+        //1. program to display all kinds of data types with different examples
+        let num = 10;
+        let str= "Hello, world!";
+        let bool = true;
+        let undefi;
+        let nul = null;
+        const person = {
+        name: "sree",
+        age: 18,
+        dept: "CSE"
+        };
+        const br = ["CME","CCN","ECE"];
+        const today = new Date();
+        //displaying
+        console.log(typeof(num));
+        console.log(typeof(str));
+        console.log(typeof(bool));
+        console.log(undefi);
+        console.log(nul);
+        console.log(typeof(person));
+        console.log(br);
+        console.log(today);
+
+
+        //2.program to add key/value pair to an object
+        const obj = {
+            name: "sree",
+            age: 18,
+        };
+        // dot notation
+        obj.state = "AP";
+        // bracket notation
+        obj["gender"] = "female";
+        console.log(obj);
+        
+        
+        
+        //3.program to check if a variable is undefined or null
+        let undef;
+        if(undef===null){
+            console.log('null')
+        }
+        else if(undef===undefined){
+            console.log('undefined')
+        }
+        else{
+            console.log(undef)
+        }
+
+
+
+        //4.program to find even num sum and odd num sum in given array
+        let arr=[1,2,3,4,5];
+        let evensum=0,oddsum=0;
+        for(let i=0;i<arr.length;i++){
+            if(arr[i]%2==0){
+                evensum+=arr[i];
+            }
+            else{
+                oddsum+=arr[i];
+            }
+        }
+        console.log('evensum:'+ evensum)
+        console.log('oddsum:'+ oddsum)
+
+
+
+        //5.program to display multiplication table by given number
+        console.log('MULTIPLICATION TABLE:')
+        let n=parseInt(prompt('enter a number:'))
+        for(let j=1;j<=10;j++){
+            console.log(n + '*'+ j+ '='+ n*j)
+        }
+
+
+
+        //6.program to print fibonacci series
+        console.log("FIBONACCI SERIES:")
+        let n1=0
+        let n2=1
+        console.log(n1)
+        console.log(n2)
+        let range=prompt('enter range:')
+        for(let i=0;i<range;i++){
+            let n3=n2+n1
+            console.log(n3)
+            n1=n2
+            n2=n3
+        }
+
+
+
+        //7.check a given number palindrome or not 
+        let number=parseInt(prompt('enter number:'))
+        let s=number.toString();
+        let rev=s.split("").reverse().join("")
+        if(s==rev){
+            alert('palindrome')
+        }
+        else{
+            alert('not a palindrome')
+        }
+
+
+
+        //8.program to add and subtract numbers using normal functions
+        sumandsub(10,20)
+        function sumandsub(a,b){
+            console.log('sum='+ (a+b))
+            console.log('difference='+ (a-b))
+        }
+
+
+
+        //9.program to multiply and divide  numbers using arrow functions
+        const func= (a,b) =>{
+            console.log('multiply='+ (a*b))
+            console.log('division='+ (a/b))
+        }
+        func(10,20)
+
+
+
+
+        //10.program to print sample text delay after 5 seconds using callback function
+        setTimeout(time,5000)
+        function time(){
+            alert('timeout: 5 seconds')
+        } 
+    </script>
+</body>
+</html>

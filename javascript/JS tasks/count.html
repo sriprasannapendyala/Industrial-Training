@@ -7,19 +7,19 @@
 </head>
 <body>
     <p id="num"> </p><br>
-    <button id="inc">increment</button>
-    <button id="dec">decrement</button>
+    <button onclick="inc()">increment</button>
+    <button  onclick="dec()">decrement</button>
 </body>
 <script>
     let k=0
     let pa=document.getElementById('num')
     pa.innerHTML='count is: '+k
 
-    let incr=document.getElementById('inc')
-    let decr=document.getElementById('dec')
+    // let incr=document.getElementById('inc')
+    // let decr=document.getElementById('dec')
 
-    incr.addEventListener('click',inc)
-    decr.addEventListener('click',dec)
+    // incr.addEventListener('click',inc)
+    // decr.addEventListener('click',dec)
     
     function inc(){
         let pa=document.getElementById('num')

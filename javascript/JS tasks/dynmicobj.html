@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,6 +6,7 @@
     <title>table</title>
 </head>
 <body>
+  <button onclick="load()">Load table</button>
     <table border="1" width="100px" height="100px">
         <tr>
             <th>Course Name</th>
@@ -39,23 +40,33 @@
             place: 'MDP'
         }
     ]
-    let ch=document.getElementById('body')
-    for(let i=0;i<arr.length;i++)
-    {
-        let r=document.createElement('tr')
-        ch.appendChild(r)
-        for(let j=0;j<arr[j].length;j++)
-        {
-            let d=document.createElement('td')
-            d[j].appendChild(arr[0].name)
-            r.appendChild(d)
+        function load(){
+          for(let i=0;i<arr.length;i++){
+            let ch=document.getElementById('body')
+            let tr=document.createElement('tr')
+            let td=document.createElement('td')
+            td.appendChild(arr[i].name)
+            
+
+          }
         }
-    }
+    // let ch=document.getElementById('body')
+    // for(let i=0;i<arr.length;i++)
+    // {
+    //     document.createElement('tr')
+    //     ch.appendChild(r)
+    //     for(let j=0;j<arr[j].length;j++)
+    //     {
+    //         let d=document.createElement('td')
+    //         d[j].appendChild(arr[0].name)
+    //         r.appendChild(d)
+    //     }
+    // }
 </script>
-</html> -->
+</html>
 
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -138,4 +149,4 @@
 </script>
 
 </body>
-</html>
+</html> -->

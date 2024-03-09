@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+</head>
+<body>
+    <script>
+        fun()
+        //fun vth no parameters
+        function fun(){
+            console.log('function vth no parameters')
+        }
+        //fun vth one parameter
+        fun1('prasanna')
+        function fun1(arg){
+            console.log(arg)
+        }
+        //fun vth 2 parameters
+        fun2(10,20)
+        function fun2(arg1,arg2){
+            console.log('2 paras:' +arg1**arg2)
+        }
+        //NaN
+        fun3(10,20)
+        function fun3(arg1,arg2,arg3){
+            console.log(arg1+arg2+arg3)
+        }
+        //doesn't care about extra arguments
+        fun4(10,20,30)
+        function fun4(arg1,arg2){
+            console.log(arg1+arg2)
+        }
+        //arrow functions
+        const name = (first, last) =>{
+            console.log(first+last)
+        }
+        name('sri ', 'prasanna')
+
+        //concat of multiple types
+        const val=(a,b,c=0)=>{
+            console.log(a+b+c)
+        }
+        val(1,'true') //1true
+        val('false',2) //false2
+        val(1,true) //2
+        val(1,false) //1
+        val(true,'false') //truefalse
+        val('true',false) //truefalse
+        val(true,false) //1
+        val('true',1,2) //true12
+        val(1,2,'true') //3true
+
+        //settimeout
+        setTimeout(()=>{
+            alert('time out: 2 secons')
+        }, 2000)
+
+        //a func in another func in argument format is called callback func
+        //example for general func as callback func
+        setTimeout(time,4000)
+        function time(){
+            alert('timeout: 4 seconds')
+        } 
+        
+        //anonymous function
+        let any=function(){
+            alert('anonymous function executed')
+        }
+        any()
+
+        //anonymous func as callback func
+        setTimeout(() => {
+            alert('after 6 se conds')
+        }, 6000);
+        
+    </script>
+</body>
+</html>

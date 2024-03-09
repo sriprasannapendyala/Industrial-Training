@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bulb</title>
+</head>
+<body>
+   <img src="../../images/bulboff.jpeg" alt="" height="200px" width="200px" id="bulb" onclick="change()"><br>
+   <button onclick="change()">click to on/off</button>
+</body>
+<script>
+    function change(){
+        var img=document.getElementById('bulb')
+        if(img.src.match('bulbon')){
+            img.src='../../images/bulboff.jpeg'
+        }
+        else{
+            img.src='../../images/bulbon.jpeg'
+        }
+    }
+</script>
+</html>

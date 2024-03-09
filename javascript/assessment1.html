@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap/bootstrap/css/bootstrap.min.css">
+    <script src="../bootstrap/bootstrap/js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Js Table Task</title>
+</head>
+<body>
+    <center><h1>Table Task</h1></center>
+    <div class="container">
+        <div class="row">
+            <div class="col-6"><h3>Product Details</h3></div>
+            <div class="col-5" >
+                <button type="button" class="btn btn-outline-primary" style="float:right" onclick="add()">+ADD NEW
+            </div>
+        </div>
+        <br>
+        <table class="table " id="table" border="1" cellspacing="0">
+            <thead>
+                <tr>
+                    <th scope="col">Product ID</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">ACtions</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+                <tr>
+                    <td>2346274</td>
+                    <td>Mobile</td>
+                    <td>40,000</td>
+                    <td>
+                        <i class="fa-solid fa-pencil" style="color: #fd490d;" onclick="editit()"></i>
+                        <i class="fa-solid fa-trash-can" style="color: #10be04;" id="icond" onclick="delet()"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>34856874</td>
+                    <td>Laptop</td>
+                    <td>1,00,000</td>
+                    <td>
+                        <i class="fa-solid fa-pencil" style="color: #fd490d;"  onclick="editit()"></i> 
+                        <i class="fa-solid fa-trash-can" style="color: #10be04;" onclick="delet()"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>238745</td>
+                    <td>Water Bottle</td>
+                    <td>300</td>
+                    <td>
+                        <i class="fa-solid fa-pencil" style="color: #fd490d;"  onclick="editit()"></i> 
+                        <i class="fa-solid fa-trash-can" style="color: #10be04;" onclick="delet()"></i>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
+<script>
+    const tb=tbody;
+    function add(){
+        let row=document.createElement('tr');
+    
+        //creating td tags
+        let cell1=document.createElement('td');
+        let cell2=document.createElement('td');
+        let cell3=document.createElement('td');
+        let cell4=document.createElement('td');
+
+        //creating the icons
+        let icone=document.createElement('i');
+        let icond=document.createElement('i');
+
+        //Setting the icon's attribute
+        icone.setAttribute('class','fa-solid fa-pencil');
+        icond.setAttribute('class','fa-solid fa-trash-can');
+        icone.style.color='#fd490d';
+        icond.style.color='#10be04';
+        icone.addEventListener('click',editit);
+        icond.addEventListener('click',delet);
+        
+        //creating input tags
+        //ip1=input1
+        let ip1=document.createElement('input');
+        ip1.setAttribute('class','form-control');
+        ip1.setAttribute('id','in1');
+        ip1.setAttribute('type','number');
+        //ip2=input2
+        let ip2=document.createElement('input');
+        ip2.setAttribute('class','form-control');
+        ip2.setAttribute('type','text');
+        ip2.setAttribute('id','in2');
+        //ip3=input3
+        let ip3=document.createElement('input');
+        ip3.setAttribute('class','form-control');
+        ip3.setAttribute('type','number');
+        ip3.setAttribute('id','in3');
+
+
+        //for reading input values into td
+        ip1.addEventListener('focusout',function(){cell1.innerText=document.getElementById('in1').value});
+        ip2.addEventListener('focusout',function(){cell2.innerText=document.getElementById('in2').value});
+        ip3.addEventListener('focusout',function(){cell3.innerText=document.getElementById('in3').value});
+
+
+        //Appending the tr and td
+        tb.appendChild(row);
+        row.appendChild(cell1);
+        row.appendChild(cell2);
+        row.appendChild(cell3);
+        row.appendChild(cell4);
+
+        //Appending the input tags to td 
+        cell1.appendChild(ip1);
+        cell2.appendChild(ip2);
+        cell3.appendChild(ip3);
+
+        //Appending buttons to the cell4
+        cell4.appendChild(icone);
+        cell4.appendChild(icond);        
+    }
+    function delet(){
+        let x=confirm('do you want to delete this row');
+        console.log(x);
+        if(x==1){
+            let td=event.target.parentNode;
+            let tr=td.parentNode;
+            tr.setAttribute('id','del');
+            document.getElementById('del').remove();
+        }
+    }
+    function editit(){
+        let tr=event.target.parentNode.parentNode;
+        let c1=tr.cells[0];
+        let c2=tr.cells[1];
+        let c3=tr.cells[2];
+
+        //creating input fields
+        let ip1=document.createElement('input');
+        ip1.setAttribute('class','form-control');
+        ip1.setAttribute('id','in1');
+        ip1.setAttribute('type','number');
+        ip1.setAttribute('value',c1.innerText);
+        //ip2=input2
+        let ip2=document.createElement('input');
+        ip2.setAttribute('class','form-control');
+        ip2.setAttribute('type','text');
+        ip2.setAttribute('id','in2');
+        ip1.setAttribute('value',c2.innerText);
+        //ip3=input3
+        let ip3=document.createElement('input');
+        ip3.setAttribute('class','form-control');
+        ip3.setAttribute('type','number');
+        ip3.setAttribute('id','in3');
+        ip1.setAttribute('value',c3.innerText);
+
+        //for reading input values into td
+        ip1.addEventListener('focusout',function(){c1.innerText=document.getElementById('in1').value});
+        ip2.addEventListener('focusout',function(){c2.innerText=document.getElementById('in2').value});
+        ip3.addEventListener('focusout',function(){c3.innerText=document.getElementById('in3').value});
+
+        //appending to cells
+        c1.appendChild(ip1);
+        c2.appendChild(ip2);
+        c3.appendChild(ip3);
+
+    }
+</script>

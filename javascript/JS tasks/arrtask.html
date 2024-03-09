@@ -1,0 +1,106 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array task</title>
+</head>
+<body>
+    <table border="1" cellspacing="0">
+        <thead>
+            <tr>
+                <th>NAME</th>
+                <th>clg</th>
+            </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+    </table>
+    <input type="text" name="" id="inp"><br>
+    <button id="but">click</button>
+</body>
+<script>
+    let arr=[
+        {
+            name:'sri',
+            clg:'ACET'
+        },
+        {
+            name:'sri',
+            clg:'ADTP'
+        },
+        {
+            name:'sri',
+            clg:'ACOE'
+        },
+        {
+            name:'sri',
+            clg:'ACET'
+        },
+        {
+            name:'sri',
+            clg:'ADTP'
+        },
+        {
+            name:'sri',
+            clg:'ACOE'
+        }
+    ]
+    let user=prompt('enter clg code:')
+    let fil=arr.filter((clg,i)=>{
+        return (user==arr[i].clg)
+    })
+    console.log(fil)
+
+    email
+    let inp=document.getElementById('inp')
+    let emails=['sri@gmail.com','prasanna@gmail.com']
+    let check=emails.some(checkk)
+    let but=document.getElementById('but').addEventListener('click',ret)
+    function checkk(mail,i,arr){
+        return mail==inp
+    }
+    function ret(){
+    if(check){
+        document.write('approved')
+    }
+    else{
+        document.write('disapproved')
+    }}
+    
+</script>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input type="text" id="lo">
+  <button onclick="hii()">click here</button>
+  <h3 id="print"></h3>
+  <script>
+    function hii(){
+    const val=document.getElementById("lo").value;
+    console.log(val)
+    let data=["sri","prasanna","pendyala","teju","yash","moyemoye","akki","red "]
+    let starting=data.find((data,index)=>{
+    return data.startsWith(val)
+  })
+  console.log(typeof(starting))
+  let va=typeof(starting)
+  if(va=="undefined"){
+    console.log("bro")
+    document.getElementById("print").textContent="undefined"
+  }
+  else{
+document.getElementById("print").textContent='found'
+}
+}
+  </script>
+</body>

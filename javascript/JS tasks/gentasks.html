@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tasks</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // string palindrome (method1)
+    let str=prompt('enter string:')
+    let rev=str.split("").reverse().join("")
+    if(str==rev){
+        alert('palindrome')
+    }
+    else{
+        alert('not a palindrome')
+    }
+
+    //sring palindrome (method2)
+    let rev2=""
+    let str2=prompt('enter 2nd string:')
+    for(let i=str2.length-1;i>=0;i--) {
+         rev2+=str2[i];
+    }
+    if(str2==rev2){
+        alert('palindrome')
+    }
+    else{
+        alert('not a palindrome')
+    }
+
+    //num palindrome
+    let num=parseInt(prompt("enter num:"))
+    let nrev=0
+    for(let i=num.length;i>0;i--){
+        
+    }
+    if(num==nrev){
+        alert('plaindrome')
+    }
+    else{
+        alert('not a palindrome')
+    }
+
+    //fibonacci
+    let n1=0
+    let n2=1
+    console.log(n1)
+    console.log(n2)
+    let range=prompt('enter range:')
+    for(let i=0;i<range;i++){
+        let n3=n2+n1
+        console.log(n3)
+        n1=n2
+        n2=n3
+    }
+
+
+</script>
+</html>
